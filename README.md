@@ -1,6 +1,6 @@
 # Wireless Retro Controllers for MiSTer FPGA (CX30 Paddle & Spinner Mod)
 
-A non-destructive wireless modification for classic Atari 2600 CX30 Paddles and retro spinners, designed specifically for **MiSTer FPGA**. 
+A non-destructive wireless modification for classic Atari 2600 CX30 Paddles and retro spinners, designed specifically for **MiSTer FPGA**. This project takes inspiration from and works wonderfully with modernized builds like the [Atari 2600 CX30+ Paddles](https://misterfpga.org/viewtopic.php?t=7149).
 
 This project utilizes **ESP-NOW** for ultra-low latency (~15ms) wireless communication, bypassing the inherent lag of standard Bluetooth modes while retaining native BLE HID support for alternative setups.
 
@@ -18,6 +18,24 @@ This project utilizes **ESP-NOW** for ultra-low latency (~15ms) wireless communi
 
 ---
 
+## 🔌 Wiring Scheme: Paddle (Atari CX30) to XIAO ESP32-C3
+
+If you are wiring a classic Atari CX30 potentiometer and fire button to the Seeed Studio XIAO ESP32-C3 transmitter, use the following connection layout:
+
+### 1. Potentiometer (CX30 Analog Dial)
+The vintage potentiometer has 3 pins. Connect them as follows:
+* **Pin 1 (Left / GND side):** Connected to **GND** on XIAO ESP32-C3.
+* **Pin 2 (Middle / Wiper - Ślizgacz):** Connected to an Analog/ADC Pin, e.g., **A0 (GPIO 2)** on XIAO ESP32-C3.
+* **Pin 3 (Right / 3.3V side):** Connected to **3.3V** on XIAO ESP32-C3.
+
+> *Note: If turning the dial in-game decreases values when it should increase (or vice versa), you can simply swap the wires connected to Pin 1 and Pin 3.*
+
+### 2. Fire Button
+* **Terminal 1:** Connected to a Digital Pin configured with internal pull-up, e.g., **D1 (GPIO 3)** on XIAO ESP32-C3.
+* **Terminal 2:** Connected to **GND**.
+
+---
+
 ## 🛠️ Hardware Requirements
 
 1. **Receiver Dongle:** 
@@ -25,7 +43,7 @@ This project utilizes **ESP-NOW** for ultra-low latency (~15ms) wireless communi
 2. **Transmitter (Paddle):** 
    * [Seeed Studio XIAO ESP32-C3](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32-C3-p-5431.html)
    * LiPo Battery & charging circuit
-   * Original Atari CX30 Paddle controller (or compatible clone)
+   * Original Atari CX30 Paddle controller (or compatible [CX30+ build](https://misterfpga.org/viewtopic.php?t=7149))
 3. **3D Printed Part:** 
    * Custom replacement bottom shell (files available in `3d_models/`).
 
