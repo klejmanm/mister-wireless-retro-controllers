@@ -80,6 +80,8 @@ When the receiver is powered via MiSTer FPGA, it broadcasts a Wi-Fi Access Point
 * **Web UI:** Navigate to `http://atari-rx.local` or `http://192.168.4.1` in your browser to check packet delivery rates, active slots, and adjust the receiver's CPU clock frequency (80MHz / 160MHz / 240MHz).
 
 ---
+<img width="3000" height="4000" alt="PXL_20260818_215311284" src="https://github.com/user-attachments/assets/664d8246-c8e0-49ca-9c74-41843877ada2" />
+
 
 ## 🤝 Acknowledgments & Disclaimer
 Firmware developed with assistance from AI coding tools. This is a personal hobbyist project created for retro-gaming enthusiasts. Feel free to fork, modify, and improve!
