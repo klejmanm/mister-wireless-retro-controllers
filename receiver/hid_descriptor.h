@@ -4,14 +4,14 @@
 #include "USB.h"
 #include "USBHID.h"
 
-// Zunifikowana ramka ESP-NOW od nadajników (6 bajtów)
+// 4-bajtowa struktura nagłówka (5. bajt odbiornik czyta osobno z paczki)
 typedef struct __attribute__((packed)) {
   uint8_t deviceType; // 0 = Paddle, 1 = Spinner
-  int16_t value;      // 0-4095 (ADC dla Paddle) | Delta relatywna dla Spinnera
+  int16_t value;      // 0-4095
   uint8_t buttons;    // Bitmaska przycisków
 } struct_message;
 
-// Deskryptor Daemonbite (3-bajtowy raport: 8-bit Buttons, 8-bit Dial, 8-bit Wheel)
+// Deskryptor Native Daemonbite (Czysty, pojedynczy raport bez REPORT_ID)
 static const uint8_t hidReportDescriptor[] = {
   0x05, 0x01,                       // USAGE_PAGE (Generic Desktop)
   0x09, 0x04,                       // USAGE (Joystick)
