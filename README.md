@@ -4,6 +4,8 @@ A non-destructive wireless mod for the **Atari 2600 CX30+** paddle controller (t
 
 The mod requires no permanent alterations to the original top enclosure or components. You can revert the controller back to its factory stock condition at any time.
 
+<img width="3000" height="4000" alt="PXL_20260825_080635770" src="https://github.com/user-attachments/assets/8cadcd19-dc00-438e-9a39-952e1c04388a" />
+
 ---
 
 ## Key Features
@@ -75,6 +77,10 @@ Solder 5 flexible wires (~10 cm long) from the original top enclosure to the XIA
   * Other contact -> **GND**
 * **Battery Connection:**
   * Solder the Li-Pol battery leads/connector directly to the battery pads on the underside of the XIAO ESP32-C3 *(double-check polarity before soldering!)*.
+<img width="3000" height="4000" alt="PXL_20260821_195653345" src="https://github.com/user-attachments/assets/2d71abf7-8ceb-44d0-b8cc-ad31f8794c9e" />
+
+<img width="3000" height="4000" alt="PXL_20260821_195659603 MP" src="https://github.com/user-attachments/assets/894285f3-c66e-46ff-abc6-501e65e33b6d" />
+
 
 ### 3. Transmitter Final Assembly
 
@@ -85,6 +91,13 @@ Solder 5 flexible wires (~10 cm long) from the original top enclosure to the XIA
 5. Secure the flat antenna inside the bottom shell using its adhesive backing.
 6. Neatly route all remaining wires to prevent them from getting pinched or interfering with the mechanical action of the Fire button.
 7. Reinstall the Fire button mechanism, align the top and bottom shell halves, and fasten them together using the original screws.
+
+<img width="3000" height="4000" alt="PXL_20260821_210038399" src="https://github.com/user-attachments/assets/43f4d5df-fe4b-44fe-9b67-d5f7f4c43159" />
+
+<img width="4000" height="3000" alt="PXL_20260822_210953770" src="https://github.com/user-attachments/assets/a747f00e-2253-45c7-8d4f-ce89daee77bf" />
+
+<img width="4000" height="3000" alt="PXL_20260822_211003158" src="https://github.com/user-attachments/assets/bcc424df-3097-4909-9758-47e0c9741187" />
+
 
 ### 4. Receiver Assembly (ESP32-S3)
 
@@ -133,3 +146,6 @@ Connect to the receiver's SoftAP Wi-Fi network (`SSID: MiSTer-RX-XXXX`, `Passwor
 * Pairing status and bound MAC addresses.
 * CPU frequency control (80MHz / 160MHz / 240MHz).
 * Sleep timer countdown monitor.
+
+<img width="3000" height="4000" alt="PXL_20260818_215311284" src="https://github.com/user-attachments/assets/2f779cf2-d309-4eeb-9c78-922294edab49" />
+
